@@ -10,15 +10,15 @@ body{
     
 }
 div.contenitore{
-    width: 60%;
+    width: 60vw;
     margin: auto;
 }
 
-header{
+header>h1{
     text-align: center;
     padding: 1rem 0 2rem 0;
     color: white;
-    font-size:xx-large;
+    font-size:4rem;
 }
 
 
@@ -38,14 +38,14 @@ section.second.row{
 
 div.box{
     float:left;
-    height: 12rem;
+    height: 35vh;
     width: calc(25% - 0.75rem);
     margin-right: 1rem;
     border-radius: 10%;
     background-image: url("./img/pattern.png");
-   background-size: contain;
-   background-position: top;
-}
+    background-size: contain;
+    background-position: top;
+    }
 
 section.row .box:last-child{
     margin-right: 0;
@@ -72,7 +72,9 @@ section.row .box:last-child{
     color:#e61986; 
     text-shadow: 1px 1px;    
 }
-
+#immagine-dinamica{
+    transition: 0.3s;
+}
 #immagine-dinamica:hover{
     background-color: white;
     background-image: url("./img/noun_Tractor_3134797.png");
@@ -80,6 +82,9 @@ section.row .box:last-child{
     background-repeat: no-repeat;
     background-position:center;
     position: relative;
+    transform: rotateZ(360deg);
+    transform: scale(1.2);
+    
 }
 #immagine-dinamica>p{
     display: none;
@@ -93,14 +98,13 @@ section.row .box:last-child{
     text-shadow: 1px 1px;
 }
 #immagine-dinamica:hover>p{
-    display: block;
-   
+    display: block; 
     
 }
 
 footer{
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem 0 0.5rem 0;
     font-weight: bolder;
     text-shadow: 1px 1px black;
 
