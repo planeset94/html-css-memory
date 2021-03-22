@@ -69,7 +69,8 @@ section.row .box:last-child{
     transform: translateX(-50%);
     font-weight: bolder;
     font-size: 17px;
-    color:#e61986;     
+    color:#e61986; 
+    text-shadow: 1px 1px;    
 }
 
 #immagine-dinamica:hover{
@@ -89,6 +90,7 @@ section.row .box:last-child{
     font-weight: bolder;
     font-size: 17px;
     color:#e67919;
+    text-shadow: 1px 1px;
 }
 #immagine-dinamica:hover>p{
     display: block;
@@ -97,6 +99,10 @@ section.row .box:last-child{
 }
 
 footer{
-    height: 5rem;
-    border: 3px solid red;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+
 }
+   
