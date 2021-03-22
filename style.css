@@ -6,6 +6,7 @@
 
 body{
     background-color:#add8e6;
+    font-family: Nerko One;
 }
 div.contenitore{
     width: 60%;
@@ -16,16 +17,64 @@ header{
     /* height: 10rem; */
     border: 3px solid black;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem 0;
     color: white;
     font-size:xx-large;
-
 }
 
 main{
-    height: 40rem;
     border: 3px solid blue;
 }
+
+.clearfix{
+    content:" ";
+    clear:both;
+    display: table;
+}
+section{
+    width: 100%;
+    margin:auto;
+}
+
+section.second.row{
+    margin:2rem 0;
+}
+
+div.box{
+    float:left;
+    height: 12rem;
+    width: calc(100% / 4 - 1rem);
+
+    border: 1px dotted red;
+    border-radius: 10%;
+    background-image: url("./img/pattern.png");
+   background-size: contain;
+   background-position: top;
+}
+section.row .box:nth-child(2){
+    background-color: green;
+    margin: 0 1rem;
+    
+}
+section.row .box:nth-child(4){
+    background-color: green;
+    margin-left: 1rem;
+
+} 
+
+#immagine-fissa{
+    background-color: white;
+    background-image: url("./img/noun_air_balloon_3134741.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+
+
+
+
+
 footer{
     height: 5rem;
     border: 3px solid red;
