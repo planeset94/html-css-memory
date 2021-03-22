@@ -3,8 +3,30 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    width: 90%;
-    background-color: lightblue;
+    background-color:#add8e6;
+}
+div.contenitore{
+    width: 60%;
+    margin: auto;
 }
 
+header{
+    /* height: 10rem; */
+    border: 3px solid black;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    font-size:xx-large;
+
+}
+
+main{
+    height: 40rem;
+    border: 3px solid blue;
+}
+footer{
+    height: 5rem;
+    border: 3px solid red;
+}
