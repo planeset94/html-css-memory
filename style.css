@@ -22,7 +22,7 @@ header>h1{
 }
 
 
-.clearfix{
+.clearfix::after{
     content:" ";
     clear:both;
     display: table;
@@ -62,7 +62,7 @@ section.row .box:last-child{
     position: relative;
 }
 
-#immagine-fissa>p{
+#par_fixed{
     position: absolute;
     bottom: 0.7rem;
     left: 50%;
@@ -75,18 +75,8 @@ section.row .box:last-child{
 #immagine-dinamica{
     transition: 0.3s;
 }
-#immagine-dinamica:hover{
-    background-color: white;
-    background-image: url("./img/noun_Tractor_3134797.png");
-    background-size:80%;
-    background-repeat: no-repeat;
-    background-position:center;
-    position: relative;
-    transform: rotateZ(360deg);
-    transform: scale(1.2);
-    
-}
-#immagine-dinamica>p{
+
+div>p{
     display: none;
     position: absolute;
     bottom: 0.7rem;
@@ -94,13 +84,49 @@ section.row .box:last-child{
     transform: translateX(-50%);
     font-weight: bolder;
     font-size: 17px;
-    color:#e67919;
     text-shadow: 1px 1px;
 }
-#immagine-dinamica:hover>p{
+div:hover>p{
     display: block; 
-    
+    }
+
+div:hover>p.par_odd{
+    color:#e67919;
+} 
+div:hover>p.par_even{
+    color:#e61986; 
+} 
+
+
+.box:hover{
+    background-color: white;
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    transform: rotateZ(360deg);
+    transform: scale(1.2);
 }
+.box.A:hover{
+    background-image: url("./img/noun_Bicycle_3134821.png");
+}
+.box.B:hover{
+    background-image: url("./img/noun_Cruise_Ship_3134824.png");
+}
+.box.C:hover{
+    background-image: url("./img/noun_Submarine_3134738.png");
+}
+.box.D:hover{
+    background-image: url("./img/noun_Tram_3134750.png");
+}
+.box.E:hover{
+    background-image: url("./img/noun_Tractor_3134797.png");
+}
+.box.F:hover{
+    background-image: url("./img/noun_air_balloon_3134741.png");
+}
+
+
 
 footer{
     text-align: center;
