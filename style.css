@@ -1,3 +1,5 @@
+/* CSS skeleton */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,81 +33,39 @@ section{
     width: 100%;
     margin:auto;
 }
+/* /CSS skeleton */
+
+/* Layout Structure */
 
 section.second.row{
     margin:2rem 0;
 }
-
 div.box{
     float:left;
-    height: 35vh;
+    height: 15rem;
     width: calc(25% - 0.75rem);
     margin-right: 1rem;
     border-radius: 10%;
     background-image: url("./img/pattern.png");
     background-size: contain;
     background-position: top;
-    }
+}
 
 section.row .box:last-child{
     margin-right: 0;
-
- 
+    
 } 
+/* /Layout Structure */
 
-#immagine-fissa{
-    background-color: white;
-    background-image: url("./img/noun_air_balloon_3134741.png");
-    background-size:80%;
-    background-repeat: no-repeat;
-    background-position:center;
-    position: relative;
-}
+/* Main Format  */
 
-#par_fixed{
-    position: absolute;
-    bottom: 0.7rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bolder;
-    font-size: 17px;
-    color:#e61986; 
-    text-shadow: 1px 1px;    
-}
-#immagine-dinamica{
-    transition: 0.3s;
-}
-
-div>p{
-    display: none;
-    position: absolute;
-    bottom: 0.7rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bolder;
-    font-size: 17px;
-    text-shadow: 1px 1px;
-}
-div:hover>p{
-    display: block; 
-    }
-
-div:hover>p.par_odd{
-    color:#e67919;
-} 
-div:hover>p.par_even{
-    color:#e61986; 
-} 
-
-
-.box:hover{
+div.box:hover{
     background-color: white;
     background-size:80%;
     background-repeat: no-repeat;
     background-position:center;
     position: relative;
-    transform: rotateZ(360deg);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .box.A:hover{
     background-image: url("./img/noun_Bicycle_3134821.png");
@@ -127,12 +87,57 @@ div:hover>p.par_even{
 }
 
 
+#fixed-img{
+    background-color: white;
+    background-image: url("./img/noun_air_balloon_3134741.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+}
 
+#par_fixed{
+    position: absolute;
+    bottom: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 17px;
+    color:#e61986; 
+    text-shadow: 1px 1px;   
+    display: block;  
+}
+
+div>p{
+    display: none;
+    position: absolute;
+    bottom: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 17px;
+    text-shadow: 1px 1px;
+}
+
+div:hover>p.par_odd{
+    color:#e67919;
+} 
+div:hover>p.par_even{
+    color:#e61986; 
+} 
+
+div:hover>p{
+    display: block; 
+}
+/* /Main Format  */
+
+
+/* Footer Format  */
 footer{
     text-align: center;
     padding: 2rem 0 0.5rem 0;
     font-weight: bolder;
     text-shadow: 1px 1px black;
-
+    
 }
-   
+/* /Footer Format  */
